@@ -1,0 +1,44 @@
+<body>
+  <app-header></app-header>
+
+  <div class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <div class="intro-wrap">
+            <br><br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row align-items-center">
+    <h1 style="text-align: center; width: 100%;">Travels List        <button (click)="createvoyage()" class="btn btn-primary">Create a new travel</button></h1>
+    
+  </div>
+
+  <div class="custom-table-container">
+    <div *ngFor="let voyage of listvoyage" class="card travel-card">
+      <img class="card-img-top travel-img" src="http://localhost:8083/voyage/files/{{voyage.photo}}" alt="Voyage image">
+
+      <div class="card-body">
+        <h5 class="card-title text-center">{{voyage.name}}</h5>
+        <h6 class="text-muted text-center">{{voyage.date}}</h6>
+        <p class="card-text"><b>Category: </b>{{voyage.category.description}}</p>
+
+        <div class="text-center">
+          <a (click)="makereservation(voyage.id)" class="btn btn-secondary">Make reservation</a>
+
+          <div class="action-buttons mt-2">
+            <button (click)="viewVoyage(voyage.id)" title="View">👁️</button>
+            <button (click)="editvoyage(voyage.id)" title="Edit">✏️</button>
+            <button (click)="deletevoyage(voyage.id)" title="Delete">🗑️</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>

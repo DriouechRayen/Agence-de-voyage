@@ -1,0 +1,88 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  background: #F9F9F9;
+  color: #333;
+}
+/* Hero section */
+.hero {
+  /* background: url('https://source.unsplash.com/1600x600/?travel') center/cover no-repeat; */
+  background-color: #0066CC;
+  text-align: center;
+  padding: 6rem 2rem;
+  color: #fff;
+}
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.btn {
+  padding: 0.75rem 1.5rem;
+  background-color: #FF6600;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+.btn:hover {
+  background-color: #E55B00;
+}
+/* Destinations section */
+.destinations {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #fff;
+}
+.destinations h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.card {
+  background: #F1F1F1;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card h3 {
+  padding: 1rem;
+}
+/* Call-to-action */
+.cta {
+  background-color: #0066CC;
+  color: #fff;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+.cta h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+/* Footer */
+footer {
+  background-color: #222;
+  color: #aaa;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+
+

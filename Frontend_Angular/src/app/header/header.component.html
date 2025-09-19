@@ -1,0 +1,16 @@
+  <nav class="site-nav">
+    <div class="container">
+      <div class="site-navigation">
+        <a routerLink="/home" class="logo m-0">Tour <span class="text-primary">.</span></a>
+        <ul class="text-left site-menu float-right">
+
+          <li class="active"><a routerLink="/home">Home</a></li>
+          <li class="active"><a routerLink="/listuser">Users</a></li>
+          <li><a routerLink="/listcategory">Categories</a></li>
+          <li><a routerLink="/listvoyage">Travels</a></li>
+          <li><a routerLink="/listreservation">Reservations</a></li>
+          <li><a (click)="logOut()">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>

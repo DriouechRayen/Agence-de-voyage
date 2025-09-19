@@ -1,0 +1,32 @@
+custom-table-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.custom-table {
+  background-color: #F0F0F0; /* light gray */
+  border: 1px solid #ccc;
+  width: 80%;
+  text-align: center;
+  border-collapse: collapse;
+}
+.custom-table th,
+.custom-table td {
+  border: 1px solid #aaa;
+  padding: 10px;
+}
+.custom-table thead {
+  background-color: #D3D3D3; /* darker gray for header */
+}
+.hero {
+  padding: 30px 0; /* reduce vertical space */
+  background-color: #5fabf7ca; /* optional: light background */
+}
+.hero .container {
+  max-width: 800px; /* optional: make the content narrower */
+  margin: 0 auto;
+}
+.hero h1 {
+  font-size: 2rem; /* reduce heading size */
+  margin-bottom: 20px; /* reduce spacing under heading */
+}
